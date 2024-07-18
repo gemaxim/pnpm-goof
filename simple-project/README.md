@@ -1,6 +1,6 @@
 # simple-project
 
-This is a pnpm project with zero code and vulnerable dependencies.
+This is a pnpm project with no code, but with manifest files that have vulnerable dependencies.
 The goal of this repo is to showcase the pnpm test and monitor functionalities in the cli.
 
 Run `snyk test` or `snyk monitor`.
