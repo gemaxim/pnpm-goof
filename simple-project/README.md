@@ -9,21 +9,21 @@ To see the returned dependency graph, use the `--print-graph` option.
 
 ### snyk test
 
-`snyk test` ouput
+`snyk test` output
 
 ![snyk test](../images/simple-project/snyk-test.png)
 ![snyk test(2)](<../images/simple-project/snyk-test(2).png>)
 
 ### snyk test --print-graph
 
-`snyk test --print-graph` ouput
+`snyk test --print-graph` output
 
 ![snyk test --print-graph](../images/simple-project/snyk-test-graph.png)
 ![snyk test --print-graph end](<../images/simple-project/snyk-test-graph(2).png>)
 
 ### snyk monitor
 
-`snyk monitor` cli ouput
+`snyk monitor` cli output
 
 ![snyk monitor cli](../images/simple-project/snyk-monitor-cli.png)
 
