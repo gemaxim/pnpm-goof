@@ -8,33 +8,21 @@ importers:
 
   .:
     dependencies:
-      '@test/package-c':
+      '@test/backend':
+        specifier: workspace:*
+        version: link:apps/backend
+      '@test/common-module':
         specifier: workspace:^
-        version: link:other-packages/pkg-c
-      package-b:
+        version: link:shared/common
+      '@test/frontend':
         specifier: workspace:^
-        version: link:packages/pkg-b
-      pkg-a:
-        specifier: workspace:^
-        version: link:packages/pkgs/pkg-a
+        version: link:apps/frontend/modules
 
-  other-packages/pkg-c:
+  apps/backend:
     dependencies:
-      body-parser:
-        specifier: 1.20.0
-        version: 1.20.0
-      node-uuid:
-        specifier: 1.4.0
-        version: 1.4.0
-      qs:
-        specifier: 0.0.6
-        version: 0.0.6
-
-  packages/pkg-b:
-    dependencies:
-      '@test/package-c':
+      '@test/common-module':
         specifier: workspace:^
-        version: link:../../other-packages/pkg-c
+        version: link:../../shared/common
       accepts:
         specifier: 1.3.7
         version: 1.3.7
@@ -57,14 +45,26 @@ importers:
         specifier: 1.2.0
         version: 1.2.0
 
-  packages/pkgs/pkg-a:
+  apps/frontend/modules:
     dependencies:
+      '@test/backend':
+        specifier: 1.0.0
+        version: link:../../backend
       ms:
         specifier: 2.1.2
         version: 2.1.2
-      package-b:
-        specifier: 1.0.0
-        version: link:../../pkg-b
+
+  shared/common:
+    dependencies:
+      body-parser:
+        specifier: 1.20.0
+        version: 1.20.0
+      node-uuid:
+        specifier: 1.4.0
+        version: 1.4.0
+      qs:
+        specifier: 0.0.6
+        version: 0.0.6
 
 packages:
 

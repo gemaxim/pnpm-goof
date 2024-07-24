@@ -1,12 +1,12 @@
 {
-    "name": "pnpm-1-workspace-with-cross-ref",
+    "name": "@test/workspace",
     "version": "1.0.0",
     "main": "index.js",
     "license": "MIT",
     "private": true,
     "dependencies": {
-        "pkg-a": "workspace:^",
-        "package-b": "workspace:^",
-        "@test/package-c": "workspace:^"
+        "@test/frontend": "workspace:^",
+        "@test/backend": "workspace:*",
+        "@test/common-module": "workspace:^"
     }
   }
