@@ -10,14 +10,14 @@ For workspaces, the `--all-projects` flag needs to be used.
 
 ### snyk test
 
-`snyk test` ouput
+`snyk test` output
 
 ![snyk test](../images/workspace/snyk-test.png)
 ![snyk test(2)](<../images/workspace/snyk-test(2).png>)
 
 ### snyk monitor
 
-`snyk monitor` cli ouput
+`snyk monitor` cli output
 
 ![snyk monitor cli](../images/workspace/snyk-monitor-cli.png)
 
