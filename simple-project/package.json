@@ -1,6 +1,6 @@
 {
     "name": "pnpm-simple-goof",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A vulnerable demo application",
     "homepage": "https://snyk.io/",
     "repository": {
